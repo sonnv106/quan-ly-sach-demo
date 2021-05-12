@@ -1,5 +1,4 @@
 var User = require("../models/user.model");
-var nodemailer = require("nodemailer");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 module.exports.login = (req, res) => {
@@ -37,28 +36,5 @@ module.exports.postLogin = async (req, res) => {
         return;
       }
     });
-  }
-  if (user.wrongLoginCount >= 4) {
-    var transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "jackyson123456789@gmail.com",
-        pass: "anhson123456789"
-      }
-    });
-    var mailOptions = {
-      from: "jackyson123456789@gmail.com",
-      to: user.email,
-      subject: "Sending Email using Node.js",
-      text: "The wrong password too much!"
-    };
-    transporter.sendMail(mailOptions, function(error, info) {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("Email sent: " + info.response);
-      }
-    });
-    return;
   }
 };
