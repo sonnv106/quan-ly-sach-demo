@@ -1,0 +1,41 @@
+extends ../layouts/common
+block content
+  if errors
+    each error in errors
+      .alert.alert-danger= error
+  if user.isAdmin
+    form(action="/users" method="POST", enctype="multipart/form-data")
+      .form-group
+        label(for="user") User
+        input#user.form-control(type="text", name="name", value=values ? values.name : "")
+      .form-group
+        label(for="phone") Phone
+        input#phone.form-control(type="text", name="phone", value=values ? values.phone : "")
+      .form-group
+        label(for="email") Email
+        input#email.form-control(type="text", name="email", value=values ? values.email : "")
+      .form-group
+        label(for="password") Password
+        input#password.form-control(type="password", name="password", value=values ? values.password : "")
+      .form-group
+        label(for="avatar") Avatar
+        input#avatar.form-control-file(type="file", name="avatar")
+      button.btn.btn-primary Add
+  table.table
+    tr
+      th Avatar
+      th Name
+      th Phone
+      if user.isAdmin
+        th Action
+      each u in users
+        tr
+          td
+            img(src= u.avatar,width= 32)
+          td= u.name
+          td= u.phone
+          if user.isAdmin
+            td
+              a.btn.btn-primary(href="/users/"+u.email+"/delete") Delete
+              span &nbsp;
+              a.btn.btn-danger(href="/users/"+u.email+"/update") Update

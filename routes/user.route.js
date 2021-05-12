@@ -1,0 +1,11 @@
+const express = require("express");
+var router = express.Router();
+var controller = require("../controllers/user.controller");
+var validate = require("../validate/user.validate");
+var upload = require("../multer");
+router.get("/", controller.getIndex);
+router.post("/", upload.single("avatar"), controller.postIndex);
+router.get("/:email/delete", controller.delete);
+router.get("/:email/update", controller.getUpdate);
+router.post("/:email/update", controller.postUpdate);
+module.exports = router;

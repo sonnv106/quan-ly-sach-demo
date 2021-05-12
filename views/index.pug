@@ -1,0 +1,48 @@
+extends ../layouts/common
+block content
+  if errors
+    each error in errors
+      .alert.alert-danger= error
+  if user.isAdmin
+      form(action="/books" method="POST" enctype="multipart/form-data")
+        .from-group
+            label.form-label(for="title") Title
+            input#title.form-control(type="text" name="title",value=values ? values.name : "")
+        .from-group    
+            label.form-label(for="description") Description
+            input#description.form-control(type="text" name="description")
+        .from-group
+            label.form-label(for="price") Price
+            input#price.form-control(type="text" name="price")
+        .from-group
+            label.form-label(for="image") Image
+            input#image.form-control(type="file" name="image")
+        button.btn.btn-primary.mt-1 Add
+      table.table
+        tr
+          th Title
+          th Description
+          th Active
+          th Add
+        each book in books
+          tr
+            td= book.title
+            td= book.description
+            td.d-flex
+              a.btn.btn-danger.m-1(href="/books/"+book.id+"/delete") Delete
+              a.btn.btn-warning.m-1(href="/books/"+book.id+"/update") Update
+            td
+              a.btn.btn-primary.m-1(href="/cart/add/"+book.id) Add
+  else
+    .container
+      .row.fixed
+        each book in books
+          .col-3.d-flex.flex-column.align-items-center.justify-content-
+            img.book-image(src= book.image)
+            .h2.flex-grow-1
+              h2= book.title
+            .lead.description
+              p= book.description
+            span.price= book.price
+            .btn.btn-danger(type='button')
+              a(href="/cart/add/"+book.id) Add

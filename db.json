@@ -1,0 +1,269 @@
+{
+  "books": [
+    {
+      "id": "ce28dcf5-926f-42a4-9d03-6b5092efee81",
+      "title": "Wine - Saint - Bris 2002, Sauv",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales",
+      "price": 64445
+    },
+    {
+      "id": "7bc8ea65-14fa-49dc-8169-e633dda3b023",
+      "title": "Pepper - Gypsy Pepper",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel",
+      "price": 233647
+    },
+    {
+      "id": "cfeaafa1-0b48-44d6-9d13-328374d98492",
+      "title": "Butter - Salted, Micro",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget",
+      "price": 69633
+    },
+    {
+      "id": "cee27a14-f431-4fdc-9e84-8a023e9abdbb",
+      "title": "Mudslide",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
+      "price": 99936
+    },
+    {
+      "id": "ff706f01-b187-4aef-a73c-77375d85bff8",
+      "title": "The Pop Shoppe - Black Cherry",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo",
+      "price": 209060
+    },
+    {
+      "id": "21a43da0-ecf0-4a0c-bc34-16dee46ca338",
+      "title": "Split Peas - Green, Dry",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis",
+      "price": 282798
+    },
+    {
+      "id": "9b04ecf3-f61b-4c28-acae-97ae15c9fac7",
+      "title": "Appetizer - Seafood Assortment",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum",
+      "price": 51268
+    },
+    {
+      "id": "f07fbbdb-07f7-4aae-b5c3-3d9a5e83823c",
+      "title": "Jameson Irish Whiskey",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien",
+      "price": 254590
+    },
+    {
+      "id": "b540e427-abf5-481a-971b-85ecf2ca2c12",
+      "title": "Cornstarch",
+      "image": "https://picsum.photos/id/237/200/300",
+      "description": "luctus et ultrices posuere cubilia curae mauris viverra diam vitae",
+      "price": 21168
+    }
+  ],
+  "users": [
+    {
+      "id": "soonHtrHF",
+      "name": "tri",
+      "phone": "11111111111",
+      "email": "tri@gmail.com",
+      "password": "$2b$10$cQ6CMhj.zd0q6HZBrSgEWOYLd1rL1KGnNbSWY/FbTL10mzvpvHZla",
+      "wrongLoginCount": 0,
+      "isAdmin": false
+    },
+    {
+      "id": "aornuVoiM",
+      "name": "thang",
+      "phone": "11111111111",
+      "email": "thang@gmail.com",
+      "password": "$2b$10$jwQVp/vcugnUMqVylEftbepNH9DsE8dpEZ.WCjetNOwp6QEqfS7l.",
+      "wrongLoginCount": 0,
+      "isAdmin": false
+    },
+    {
+      "id": "aornuVoiM",
+      "name": "thang",
+      "phone": "11111111111",
+      "email": "thang@gmail.com",
+      "password": "$2b$10$jwQVp/vcugnUMqVylEftbepNH9DsE8dpEZ.WCjetNOwp6QEqfS7l.",
+      "wrongLoginCount": 0,
+      "isAdmin": false
+    },
+    {
+      "id": "sDPFPMyP6",
+      "name": "son",
+      "phone": "0968565096",
+      "email": "sonnguyen106mh@gmail.com",
+      "password": "$2b$10$OckRkKf3TsdIIQ9xgPpOuuRM3w0mLRnyArMyvJATDPCxxf/8q2fbW",
+      "wrongLoginCount": 0,
+      "isAdmin": true
+    },
+    {
+      "id": "mBkw8n2Uq",
+      "name": "na",
+      "phone": "11111111111",
+      "email": "na@gmail.com",
+      "avatar": "uploads/5ff3c38b58e41c8c30cb4b3f98129c40",
+      "password": "$2b$10$FD4DMmDwJI34vdl9yocqiu3s3bSLhHtxUFWUQbON6873n5nw15em.",
+      "wrongLoginCount": 0,
+      "isAdmin": false
+    },
+    {
+      "id": "VvBP6xsWpt",
+      "name": "na",
+      "phone": "11111111111",
+      "email": "na@gmail.com",
+      "avatar": "uploads/eca650378cb7af83bd4d5b57be297958",
+      "password": "$2b$10$IE.MbGLvLDkzamOFa5.t8OxqkGH6Vu/lkyiz85wAokuZiKP0NYsbu",
+      "wrongLoginCount": 0
+    }
+  ],
+  "transactions": [
+    {
+      "id": "CtwgmZzRh",
+      "user": {
+        "id": "soonHtrHF",
+        "name": "tri"
+      },
+      "book": {
+        "id": "ce28dcf5-926f-42a4-9d03-6b5092efee81",
+        "title": "Wine - Saint - Bris 2002, Sauv"
+      },
+      "isComplete": false
+    }
+  ],
+  "sessions": [
+    {
+      "id": "hbe9Q7kYc",
+      "cart": {
+        "ce28dcf5-926f-42a4-9d03-6b5092efee81": 2,
+        "7bc8ea65-14fa-49dc-8169-e633dda3b023": 1
+      }
+    },
+    {
+      "id": "_OSJCjKn4",
+      "cart": {
+        "ce28dcf5-926f-42a4-9d03-6b5092efee81": 1,
+        "7bc8ea65-14fa-49dc-8169-e633dda3b023": 1
+      }
+    },
+    {
+      "id": "RxB5l2TVr"
+    },
+    {
+      "id": "nCcU2ohd3"
+    },
+    {
+      "id": "DeqboypCz"
+    },
+    {
+      "id": "OXXQLcfxc"
+    },
+    {
+      "id": "Dmz6stCeu"
+    },
+    {
+      "id": "Yum7-aqKJ"
+    },
+    {
+      "id": "Ax2ykUWF-"
+    },
+    {
+      "id": "hlW4WNOkY"
+    },
+    {
+      "id": "sY9VwPYdNJ"
+    },
+    {
+      "id": "GkJeWVqgb"
+    },
+    {
+      "id": "wDYFeQpxl"
+    },
+    {
+      "id": "wYyTIOVEJ"
+    },
+    {
+      "id": "8zSztn_Kb"
+    },
+    {
+      "id": "cbUULLjKA"
+    },
+    {
+      "id": "xfOi7t3BP"
+    },
+    {
+      "id": "2OysyNNIx"
+    },
+    {
+      "id": "i9VyJwWAy"
+    },
+    {
+      "id": "yYWFYigpr"
+    },
+    {
+      "id": "PL0qwRt8l"
+    },
+    {
+      "id": "LSGvYLZvK"
+    },
+    {
+      "id": "upOGzer69"
+    },
+    {
+      "id": "VNCbEhbS3"
+    },
+    {
+      "id": "TbmDRPnlW"
+    },
+    {
+      "id": "oMCBOlSN1"
+    },
+    {
+      "id": "3NWG1O8Z3"
+    },
+    {
+      "id": "q1SodAejL"
+    },
+    {
+      "id": "HgPXnzXxv"
+    },
+    {
+      "id": "BkBfrUdxs"
+    },
+    {
+      "id": "OrsESx7bq"
+    }
+  ],
+  "posts": [],
+  "user": {},
+  "count": 0,
+  "transfer": [
+    {
+      "id": "Fkso_qM4K3",
+      "account": "123456",
+      "amount": 60000
+    },
+    {
+      "id": "DCgtbXWwho",
+      "account": "123456",
+      "amount": 2000,
+      "userId": "soonHtrHF"
+    },
+    {
+      "id": "naGBVLbig1",
+      "account": "123456",
+      "amount": 20000,
+      "userId": "soonHtrHF"
+    },
+    {
+      "id": "4iQ_B2Elum",
+      "account": "123456",
+      "amount": 1111,
+      "userId": "sDPFPMyP6"
+    }
+  ]
+}

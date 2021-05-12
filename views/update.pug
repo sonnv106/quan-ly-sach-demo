@@ -1,0 +1,14 @@
+extends ../layouts/common
+block content
+  nav(class="nav navbar-expand-lg navbar-light bg-light")
+    a(href="/books" class="nav-link") Books
+    a(href="/users" class="nav-link") Users
+    a(href="/transactions" class="nav-link") Transactions
+  h2 Update title
+  p
+    b title: 
+    span &nbsp
+    span= book.title
+  form(action="/books/"+book.title+"/update" method="POST")
+    input(type="text" name="title" class="form-control")
+    button(class="btn btn-primary") Update
