@@ -1,0 +1,30 @@
+
+extends ../layouts/common
+block content
+  nav(class="nav navbar-expand-lg navbar-light bg-light")
+    a(href="/books" class="nav-link") Books
+    a(href="/users" class="nav-link") Users
+    a(href="/transactions" class="nav-link") Transactions
+  a(href="/transactions/create" class="btn btn-primary") Create transaction
+  table(style="width:100%")
+    tr
+      th(style="border: 1px solid black")  Transactions
+      th(style="border: 1px solid black" colspan="2") User 
+      th(style="border: 1px solid black" colspan="2")  Book
+      th(style="border: 1px solid black")  Trạng thái
+    each transaction in transactions
+      tr
+        td(style="border: 1px solid black" rowspan='2')
+        th(style="border: 1px solid black") Id User
+        td(style="border: 1px solid black")= transaction.userId
+        th(style="border: 1px solid black") Id Book
+        td(style="border: 1px solid black")= transaction.bookId
+        td(style="border: 1px solid black" rowspan="2")
+          a(href="/transactions/"+transaction.id+"/complete")= transaction.isComplete
+      tr
+        th(style="border: 1px solid black") Name User
+        td(style="border: 1px solid black")
+        th(style="border: 1px solid black") Name Book
+        td(style="border: 1px solid black")
+
+    

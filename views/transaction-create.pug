@@ -1,0 +1,9 @@
+a(href="/books") list books
+form(action="/transactions/create" method="POST")
+  select(name="book")
+    each book in books
+      option(value= book.id + '|' + book.title)= book.title
+  select(name="user")
+    each user in users 
+      option(value= user.id + '|' + user.name)= user.name 
+  button Create
